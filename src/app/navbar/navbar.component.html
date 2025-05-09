@@ -1,0 +1,42 @@
+<section class="scroll-smooth w-full bg-gray-700 py-4 px-6">
+  <nav class="flex md:justify-around justify-between items-center">
+
+    <!-- Logo -->
+    <div class="text-white text-3xl font-bold">RENU JAIN</div>
+
+    <!-- Navigation Links (Visible on medium and larger screens) -->
+    <div class="hidden md:flex gap-8 text-white text-xl ">
+
+      <a class="default-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/">Home</a>
+      <a class="default-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/about">About</a>
+      <a class="default-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/projects">Projects</a>
+      <a class="default-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/contact">Contact</a>
+      <a class="default-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/resume">Resume</a>
+    </div>
+
+    <!-- Mobile Navigation Links (Only visible when menu is toggled) -->
+    <div class="md:hidden flex flex-row text-white text-xl gap-6" *ngIf="navbarVisible">
+      <a class="default-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/">Home</a>
+      <a class="default-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/about">About</a>
+      <a class="default-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/projects">Projects</a>
+      <a class="default-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/contact">Contact</a>
+    </div>
+
+
+    <!-- Hamburger Button (Only visible on mobile) -->
+    <button class="text-white text-3xl w-14 h-14 md:hidden bg-gray-900 text-2xl rounded-full " (click)="toggleNavbar()">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+
+  </nav>
+
+</section>

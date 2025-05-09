@@ -1,0 +1,22 @@
+a {
+    text-decoration: none;
+}
+
+
+/* Default state */
+.default-link {
+    color: white;
+    transition: color 0.3s;
+
+}
+
+/* Hover effect */
+.default-link:hover {
+    color: blue
+}
+
+/* When the route is active */
+.active-link {
+    color: blue;
+    font-weight: 900;
+}

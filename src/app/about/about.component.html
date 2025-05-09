@@ -1,0 +1,112 @@
+<!-- Main section -->
+<section
+  class="scroll-smooth h-[600px] md:h-[var(--my-height)] w-full p-5 md:p-0 bg-gray-200 overflow-x-hidden overflow-y-auto text-lg flex flex-col items-center">
+
+  <!-- About content -->
+  <div class="md:max-w-4xl w-full mx-auto">
+
+    <!-- About Heading -->
+    <h1 class="text-4xl font-extrabold underline underline-offset-8 decoration-blue-700 decoration-5">About</h1>
+
+    <!-- About Description -->
+    <p>
+      I design and build responsive and user-friendly web interfaces using <strong>Angular</strong> and modern frontend
+      technologies. My goal is to create websites and applications that look good, work smoothly on all devices, and are
+      easy for people to use.
+    </p>
+    <p>
+      I focus on writing clean and efficient code to ensure the application runs fast and performs well. I enjoy turning
+      complex ideas into simple, attractive, and interactive designs that users enjoy using.
+    </p>
+  </div>
+
+
+
+  <!-- Image + Tech stack section -->
+  <div class="flex flex-col md:flex-row md:justify-center items-center max-w-4xl mx-auto mt-6 gap-10 ">
+
+    <!-- Profile image card -->
+    <div
+      class="w-full sm:w-72 md:w-72 h-96 bg-white rounded-xl shadow-md  mx-auto mb-6 md:mb-0 flex flex-col justify-center items-center">
+
+      <!-- Image -->
+      <img src="/assets/profile-image.jpeg" class="object-cover w-full h-full rounded-xl shadow-md "
+        alt="Profile image" />
+    </div>
+
+
+    <!-- Tech Stack & Interests -->
+    <div class="flex-1 space-y-6 ms-10">
+
+      <!-- Tech stack list -->
+      <div>
+        <h2 class="text-2xl font-bold">💼 Tech Stack:</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+
+          <div>
+            <h4 class="font-semibold text-lg">Frontend Technologies</h4>
+            <ul class="list-disc pl-5 text-gray-700">
+              <li>Angular</li>
+              <li>TypeScript</li>
+              <li>JavaScript (ES6+)</li>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+              <li>PrimeNG</li>
+              <li>Material UI</li>
+              <li>FontAwesome</li>
+            </ul>
+
+            <!-- Other Skills -->
+            <h4 class="font-semibold text-lg mt-4">Other Skills</h4>
+            <ul class="list-disc pl-5 text-gray-700">
+              <li>UI/UX Best Practices</li>
+              <li>Real-time Applications</li>
+            </ul>
+          </div>
+
+          <!-- APIs and Tools -->
+          <div>
+            <h4 class="font-semibold text-lg">Backend / APIs and Tools</h4>
+            <ul class="list-disc pl-5 text-gray-700">
+              <li>SvelteKit</li>
+              <li>REST APIs</li>
+              <li>Postman</li>
+              <li>GitHub</li>
+              <li>Figma to Code Conversion</li>
+              <li>RapidAPI</li>
+              <li>Responsive Web Design</li>
+            </ul>
+
+            <!-- Databases -->
+            <h4 class="font-semibold text-lg mt-4">Databases</h4>
+            <ul class="list-disc pl-5 text-gray-700">
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>Mongo Atlas</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Interests -->
+  <div class=" min-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold">💡 Interests:</h2>
+    <p class="mt-2">
+      UI/UX Design | App Development
+    </p>
+  </div>
+
+  <!-- Resume Button -->
+  <div class="mb-10 min-w-4xl md:text-end text-center">
+    <button class="mt-4 bg-blue-600 px-4 py-2 text-lg rounded-full text-white hover:bg-blue-700 transition duration-200"
+      routerLink="/resume">Resume</button>
+  </div>
+
+</section>

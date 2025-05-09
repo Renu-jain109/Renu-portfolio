@@ -1,0 +1,173 @@
+<!-- Contact Section with Form and Modal -->
+<section class="scroll-smooth w-full h-full mx-auto p-4">
+
+  <!-- Contact Details: Call and Email -->
+  <div class="flex flex-row justify-evenly mt-10">
+
+    <div>
+      <h3 class="font-bold text-3xl">Call Me</h3>
+      <p class="text-xl">📞 7065337656</p>
+    </div>
+    <div>
+      <h3 class="font-bold text-3xl">Email</h3>
+      <p class="text-xl">📧 jainwithrenu&#64;gmail.com</p>
+    </div>
+
+  </div>
+
+
+
+  <!-- Contact Form -->
+  <div class="pt-4">
+    <h2 class="text-center text-3xl font-bold text-blue-600">Contact Form</h2>
+
+    <form [formGroup]="contactForm" (ngSubmit)="submit()" class="max-w-md mx-auto">
+
+      <!-- Name Field -->
+      <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="name" id="name" formControlName="name"
+          class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder=" " required />
+        <label for="name"
+          class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
+          Name</label>
+
+        <!-- Error messages for Name-->
+        <div class="text-red-500" *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
+          <small *ngIf="contactForm.get('name')?.errors?.['required']">
+            Name is required.
+          </small>
+          <small *ngIf="contactForm.get('name')?.errors?.['minlength']">
+            Name must be at least 2 characters.
+          </small>
+          <small *ngIf="contactForm.get('name')?.errors?.['pattern']">
+            Name can only contain letters and spaces.
+          </small>
+        </div>
+
+      </div>
+
+
+      <!-- Email Field -->
+      <div class="relative z-0 w-full mb-5 group">
+        <input type="email" name="email" id="email" formControlName="email"
+          class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder=" " required />
+        <label for="email"
+          class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
+          Email</label>
+
+        <!-- Error messages for Email-->
+        <div class="text-red-500" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+          <small *ngIf="contactForm.get('email')?.errors?.['required']">
+            Email is required.
+          </small>
+          <small *ngIf="contactForm.get('email')?.errors?.['email']">
+            Please enter a valid email address.
+          </small>
+        </div>
+      </div>
+
+
+      <!-- Subject Field -->
+      <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="subject" id="subject" formControlName="subject"
+          class="block py-2.5 px-0 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder=" " required />
+        <label for="subject"
+          class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Subject</label>
+
+        <!-- Error messages for Subject-->
+        <div class="text-red-500" *ngIf="contactForm.get('subject')?.touched && contactForm.get('subject')?.invalid">
+          <small *ngIf="contactForm.get('subject')?.errors?.['required']">
+            Subject is required.
+          </small>
+          <small *ngIf="contactForm.get('subject')?.errors?.['minlength']">
+            Subject must be at least 3 characters.
+          </small>
+          <small *ngIf="contactForm.get('subject')?.errors?.['maxlength']">
+            Subject can't exceed 100 characters.
+          </small>
+        </div>
+
+      </div>
+
+
+
+      <!-- Message Field -->
+      <div class="relative z-0 w-full mb-5 group">
+        <textarea id="message" rows="4" name="message" formControlName="message"
+          class="block p-2.5 w-full text-md text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:ring-blue-500 focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          placeholder="" required></textarea>
+        <label for="message"
+          class="peer-focus:font-medium absolute text-md text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
+
+        <!-- Error messages for Message-->
+        <div class="text-red-500" *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+          <small *ngIf="contactForm.get('message')?.errors?.['required']">
+            Message is required.
+          </small>
+          <small *ngIf="contactForm.get('message')?.errors?.['minlength']">
+            Message must be at least 10 characters long.
+          </small>
+          <small *ngIf="contactForm.get('message')?.errors?.['maxlength']">
+            Message cannot exceed 500 characters.
+          </small>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit"
+        class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-md w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-700 transition duration-200">Submit</button>
+    </form>
+
+
+  </div>
+
+
+
+
+  <!-- Modal for Submission Details -->
+  <div *ngIf="showModal" id="small-modal" tabindex="-1" aria-hidden="true"
+    class=" overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-full ">
+    <div class="relative p-4 w-full max-w-md max-h-full ">
+
+      <!-- Modal content -->
+      <div class="relative bg-gray-100 shadow-4xl rounded-lg shadow-sm dark:bg-gray-700">
+
+        <!-- Modal header -->
+        <div
+          class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Terms of Service
+          </h3>
+          <button type="button"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="default-modal" (click)="closeModal()">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="p-4 md:p-5 space-y-4">
+          <p><strong>Your Name : </strong>{{submittedData?.name}}</p>
+          <p><strong>Your Email : </strong>{{submittedData?.email}}</p>
+          <p><strong>Subject : </strong>{{submittedData?.subject}}</p>
+          <p><strong>Message : </strong>{{submittedData?.message}}</p>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+          <button data-modal-hide="small-modal" type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            (click)="closeModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

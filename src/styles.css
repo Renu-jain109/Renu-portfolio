@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import "tailwindcss"; */
+
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+@use "themes/tailwind";
+
+
+body {
+    font-family: Arial, sans-serif;
+    --my-height:90vh;
+  }
+
+  @layer utilities {
+    .fade-up {
+      @apply opacity-0 translate-y-10 transition duration-700 ease-out;
+    }
+  
+    .fade-up-active {
+      @apply opacity-100 translate-y-0;
+    }
+  }

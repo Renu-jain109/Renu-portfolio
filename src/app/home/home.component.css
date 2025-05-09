@@ -1,0 +1,138 @@
+.text {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-offset: 7px;
+  /* Adds space between text and underline */
+}
+
+/* Blinking typing effect with cursor for text-1 */
+.text-1 {
+  border-right: 2px solid white;
+  animation: type1 20s steps(24) infinite, blink 0.75s step-end infinite;
+}
+
+/* Delayed typing effect for text-2, cursor appears later */
+.text-2 {
+  border-right: 2px solid transparent;
+  animation: type2 20s steps(20) infinite, blink 0.75s step-end infinite;
+}
+
+
+/* Typing animation for text-1 */
+@keyframes type1 {
+  0% {
+    width: 0ch;
+    opacity: 1;
+    z-index: 2;
+    border-right: 2px solid white;
+  }
+
+  10% {
+    width: 15ch;
+    border-right: 2px solid white;
+
+  }
+
+  25% {
+    width: 15ch;
+  }
+
+  35% {
+    width: 0ch;
+    opacity: 1;
+    border-right: 2px solid white;
+
+  }
+
+  49% {
+    width: 0ch;
+    opacity: 0;
+    z-index: 1;
+    border-right: none;
+  }
+
+  100% {
+    width: 0ch;
+    opacity: 0;
+    z-index: 1;
+    border-right: none;
+  }
+}
+
+
+/* Typing animation for text-2 (starts after text-1 finishes) */
+@keyframes type2 {
+
+  0%,
+  49% {
+    width: 0ch;
+    opacity: 0;
+    z-index: 1;
+    border-right-color: transparent;
+  }
+
+  50% {
+    opacity: 1;
+    z-index: 2;
+    border-right: 2px solid white;
+  }
+
+  60% {
+    width: 16ch;
+    border-right-color: white;
+  }
+
+  75% {
+    width: 16ch;
+    border-right-color: white;
+  }
+
+  85% {
+    width: 0ch;
+    border-right-color: transparent;
+  }
+
+  100% {
+    width: 0ch;
+    border-right-color: transparent;
+
+  }
+}
+
+
+/* Blinking cursor animation */
+@keyframes blink {
+
+  0%,
+  100% {
+    border-right-color: white;
+  }
+
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Custom shape using clip-path and rounded corner */
+.custom-shape {
+  clip-path: polygon(5% 0, 100% 0, 100% 85%, 0% 100%);
+  border-bottom-left-radius: 600px;
+}
+
+
+/* Fade-in-up effect for scroll animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+/* Final visible state after animation triggers */
+.show {
+  opacity: 1 !important;
+  transform: translateX(0) translateY(0) !important;
+}
