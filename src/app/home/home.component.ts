@@ -3,12 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ScrollAnimateDirective } from '../directives/scroll-animate.directive';
 import { RouterLink } from '@angular/router';
 import { IonIcon } from '@ionic/angular/standalone';
-import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, ScrollAnimateDirective, RouterLink, IonIcon, FooterComponent],
+  imports: [CommonModule, ScrollAnimateDirective, RouterLink, IonIcon],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

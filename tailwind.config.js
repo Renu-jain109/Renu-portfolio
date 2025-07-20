@@ -6,9 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      height:{
-        "scroll-85": "85vh"
-      }
+      // height:{
+      //   "scroll-85": "85vh"
+      // }
     },
   },
   plugins: [],

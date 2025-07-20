@@ -1,0 +1,4 @@
+/* In your styles.css or global stylesheet */
+ul.blue-bullets li::marker {
+  color: #2563eb; /* Tailwind's blue-600 */
+}

@@ -8,7 +8,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    --my-height:90vh;
+    --my-height:100vh;
   }
 
   @layer utilities {
@@ -20,3 +20,14 @@ body {
       @apply opacity-100 translate-y-0;
     }
   }
+
+   /* html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  } */
+  /*
+  main {
+    flex: 1; /* Ensures main content takes up available space */
+  

@@ -4,7 +4,6 @@ import { AboutComponent } from './about/about.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
-import { FooterComponent } from './footer/footer.component';
 
 export const routes: Routes = [
 
@@ -29,10 +28,6 @@ export const routes: Routes = [
     {
         path: 'resume',
         component: ResumeComponent
-    },
-    {
-        path: 'footer',
-        component: FooterComponent
     },
     {
         path: '**',

@@ -1,13 +1,12 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { IonIcon } from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [CommonModule, IonIcon],
+  imports: [IonIcon],
   templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss'],
+  styleUrls: ['./resume.component.css'],
 })
 export class ResumeComponent implements OnInit {
 
