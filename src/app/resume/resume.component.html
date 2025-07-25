@@ -2,134 +2,145 @@
 <section class="scroll-smooth md:min-h-[575px] h-[535px] overflow-auto flex flex-col items-center bg-gray-100 pb-4">
 
 
-<!-- Resume Download Button -->
-<div class="w-full flex flex-row justify-end my-3 pe-6">
-    <button
-        class=" px-5 py-2 rounded-lg shadow-md flex gap-2 items-center bg-blue-600 hover:bg-blue-700 hover:rounded-full text-white transition duration-200"
-        (click)="downloadPdf()"> Download Resume
-        <ion-icon name="arrow-down-outline"></ion-icon>
-    </button>
-</div>
-
-<div class="max-w-5xl mx-auto my-4 border border-gray-200 shadow-xl bg-white rounded">
-
-    <!-- Header -->
-    <div class="flex flex-col md:flex-row bg-blue-700 text-white p-6 rounded-t">
-        <div class="md:w-1/3 flex justify-center items-center">
-            <div
-                class="w-32 h-32 rounded-full border-4 border-white flex justify-center items-center text-7xl font-bold">
-                RJ</div>
-        </div>
-        <div class="md:w-2/3 mt-4 md:mt-0 md:ml-6">
-            <h1 class="text-4xl font-bold tracking-wide">RENU JAIN</h1>
-            <p class="text-lg font-light">Frontend Developer (Angular)</p>
-        </div>
+    <!-- Resume Download Button -->
+    <div class="w-full flex flex-row justify-end my-3 pe-6">
+        <button
+            class=" px-5 py-2 rounded-lg shadow-md flex gap-2 items-center bg-blue-600 hover:bg-blue-700 hover:rounded-full text-white transition duration-200"
+            (click)="downloadPdf()"> Download Resume
+            <ion-icon name="arrow-down-outline"></ion-icon>
+        </button>
     </div>
 
-    <!-- Main content -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-        <!-- Sidebar -->
-        <div class="bg-blue-100 p-6">
-            <h2 class="text-blue-700 text-xl font-bold mb-2">CONTACT</h2>
-            <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
-            <ul class="space-y-2 text-sm list-none">
-                <li><i class="fas fa-phone mr-2 text-blue-600"></i> 7065337656</li>
-                <li><i class="fas fa-envelope mr-2 text-blue-600"></i> jainwithrenu243&#64;gmail.com</li>
-                <li><i class="fab fa-linkedin mr-2 text-blue-600"></i><a
-                        href="https://www.linkedin.com/in/renu-jain-543005331/" target="_blank"
-                        rel="noopener noreferrer" class="text-blue-600 underline">LinkedIn Profile</a></li>
-                <li><i class="fab fa-github mr-2 text-blue-600"></i><a href="https://github.com/Renu-jain109"
-                        target="_blank" rel="noopener noreferrer" class="text-blue-600 underline">GitHub Profile</a>
-                </li>
-            </ul>
+    <div class="max-w-5xl mx-auto my-4 border border-gray-200 shadow-xl bg-white rounded">
 
-            <h2 class="text-blue-700 text-xl font-bold mt-6 mb-2">SKILLS</h2>
-            <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
-            <ul class="blue-bullets list-disc list-inside text-sm space-y-1">
-                <li>Angular, TypeScript, JavaScript (ES6+)</li>
-                <li>HTML5, CSS, Bootstrap, Tailwind CSS</li>
-                <li>PrimeNG, Material UI, FontAwesome</li>
-                <li>REST APIs, Postman, RapidAPI</li>
-                <li>MongoDB, Firebase</li>
-                <li>UI/UX Best Practices</li>
-                <li>Responsive Web Design</li>
-            </ul>
-
-            <h2 class="text-blue-700 text-xl font-bold mt-6 mb-2">CERTIFICATIONS</h2>
-            <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
-            <ul class="blue-bullets list-disc list-inside text-sm">
-                <li>Codexintern</li>
-                <li>Unified Mentor</li>
-            </ul>
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row bg-blue-700 text-white p-6 rounded-t">
+            <div class="md:w-1/3 flex justify-center items-center">
+                <div
+                    class="w-32 h-32 rounded-full border-4 border-white flex justify-center items-center text-7xl font-bold">
+                    RJ</div>
+            </div>
+            <div class="md:w-2/3 mt-4 md:mt-0 md:ml-6">
+                <h1 class="text-4xl font-bold tracking-wide">RENU JAIN</h1>
+                <p class="text-lg font-light">Frontend Developer (Angular)</p>
+            </div>
         </div>
 
-        <!-- Content Area -->
-        <div class="md:col-span-2 p-6">
-            <h2 class="text-blue-700 text-xl font-bold mb-2">PROFESSIONAL SUMMARY
-            </h2>
-            <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
-            <p class="mb-4 text-sm">
-                Frontend Developer with expertise in Angular, TypeScript, and modern web technologies.
-                Skilled in building responsive, user-friendly web applications with a focus on UI/UX.
-                Passionate about creating smooth, fast, and interactive websites that offer excellent user experiences.
-                Experienced in integrating third-party REST APIs and working with MongoDB and Firebase for cloud-based
-                data storage and real-time applications.
-            </p>
+        <!-- Main content -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+            <!-- Sidebar -->
+            <div class="bg-blue-100 p-6">
+                <h2 class="text-blue-700 text-xl font-bold mb-2">CONTACT</h2>
+                <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
+                <ul class="space-y-2 text-sm list-none">
+                    <li><i class="fas fa-phone mr-2 text-blue-600"></i><strong>Phone:</strong> 7065337656</li>
 
-            <h2 class="text-blue-700 text-xl font-bold mb-2">PROJECTS</h2>
-            <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
+                    <li><i class="fas fa-envelope mr-1 text-blue-600"></i><strong> Email:</strong>
+                        jainwithrenu243&#64;gmail.com</li>
 
-            <div class="space-y-4 text-sm">
-                <div>
-                    <p class="font-semibold">Result Management System</p>
-                    <p class="italic">Tech: Angular, PrimeNG, Bootstrap, Material UI</p>
-                    <ul class="list-disc list-inside">
-                        <li>Manage student results (add, edit, delete).</li>
-                        <li>Students can search results by roll number/name.</li>
-                        <li>Clean and responsive UI.</li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-semibold">Real-Time Chat Application</p>
-                    <p class="italic">Tech: Angular, Tailwind CSS, Firebase</p>
-                    <ul class="list-disc list-inside">
-                        <li>Real-time secure messaging with user authentication.</li>
-                        <li>Lightweight and fast UI.</li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-semibold">The Cooking Corner</p>
-                    <p class="italic">Tech: Angular, Tailwind CSS</p>
-                    <ul class="list-disc list-inside">
-                        <li>Interactive food blog with categorized recipes and blog posts.</li>
-                        <li>Clean, responsive UI optimized for readability and mobile users.</li>
-                        <li>Smooth navigation with engaging layout for About and Recipe sections.</li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-semibold">Quiz App</p>
-                    <p class="italic">Tech: Angular, Primeng, Bootstrap</p>
-                    <ul class="list-disc list-inside">
-                        <li>Timed quiz platform with HTML, CSS, and JavaScript categories.</li>
-                        <li>10 MCQs per quiz with real-time score tracking and instant feedback.</li>
-                        <li>Responsive UI with pass criteria and auto-handling of unanswered questions.</li>
-                    </ul>
-                </div>
-                <div>
-                    <p class="font-semibold">Translator</p>
-                    <p class="italic">Tech: Angular, Tailwind Css, Font Awesome, Rapid API</p>
-                    <ul class="list-disc list-inside">
-                        <li>Real-time language translation using external API.</li>
-                        <li>Supports multiple language pairs with instant text output.</li>
-                        <li>Minimal, responsive UI for fast and accessible translation experience.</li>
-                    </ul>
-                </div>
+                    <li><i class="fas fa-globe mr-2 text-blue-600"></i><strong>Portfolio:</strong><a
+                            href="https://www.renu-jain.com/" target="_blank" rel="noopener noreferrer"
+                            class="text-blue-600 underline">renu-jain.com</a></li>
+
+                    <li><i class="fab fa-linkedin mr-2 text-blue-600"></i><strong>LinkedIn:</strong><a
+                            href="https://www.linkedin.com/in/renu-jain-543005331/" target="_blank"
+                            rel="noopener noreferrer" class="text-blue-600 underline"> linkedin.com/in/renujain</a></li>
+
+                    <li><i class="fab fa-github mr-2 text-blue-600"></i><strong>GitHub:</strong><a
+                            href="https://github.com/Renu-jain109" target="_blank" rel="noopener noreferrer"
+                            class="text-blue-600 underline"> github.com/renujain</a>
+                    </li>
+                </ul>
+
+                <h2 class="text-blue-700 text-xl font-bold mt-6 mb-2">SKILLS</h2>
+                <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
+                <ul class="blue-bullets list-disc list-inside text-sm space-y-1">
+                    <li>Angular, TypeScript, JavaScript (ES6+)</li>
+                    <li>HTML5, CSS, Bootstrap, Tailwind CSS</li>
+                    <li>PrimeNG, Material UI, FontAwesome</li>
+                    <li>REST APIs, Postman, RapidAPI</li>
+                    <li>MongoDB, Firebase</li>
+                    <li>UI/UX Best Practices</li>
+                    <li>Responsive Web Design</li>
+                </ul>
+
+                <h2 class="text-blue-700 text-xl font-bold mt-6 mb-2">CERTIFICATIONS</h2>
+                <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
+                <ul class="blue-bullets list-disc list-inside text-sm">
+                    <li>Codexintern</li>
+                    <li>Unified Mentor</li>
+                </ul>
             </div>
 
-            <h2 class="text-blue-700 text-xl font-bold mt-6 mb-2">EDUCATION</h2>
-            <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
-            <p class="text-sm">Master of Computer Applications (MCA), GLA University (Aspirant)</p>
+            <!-- Content Area -->
+            <div class="md:col-span-2 p-6">
+                <h2 class="text-blue-700 text-xl font-bold mb-2">PROFESSIONAL SUMMARY
+                </h2>
+                <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
+                <p class="mb-4 text-sm">
+                    Frontend Developer with expertise in Angular, TypeScript, and modern web technologies.
+                    Skilled in building responsive, user-friendly web applications with a focus on UI/UX.
+                    Passionate about creating smooth, fast, and interactive websites that offer excellent user
+                    experiences.
+                    Experienced in integrating third-party REST APIs and working with MongoDB and Firebase for
+                    cloud-based
+                    data storage and real-time applications.
+                </p>
+
+                <h2 class="text-blue-700 text-xl font-bold mb-2">PROJECTS</h2>
+                <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
+
+                <div class="space-y-4 text-sm">
+                    <div>
+                        <p class="font-semibold">Result Management System</p>
+                        <p class="italic">Tech: Angular, PrimeNG, Bootstrap, Material UI</p>
+                        <ul class="list-disc list-inside">
+                            <li>Manage student results (add, edit, delete).</li>
+                            <li>Students can search results by roll number/name.</li>
+                            <li>Clean and responsive UI.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Real-Time Chat Application</p>
+                        <p class="italic">Tech: Angular, Tailwind CSS, Firebase</p>
+                        <ul class="list-disc list-inside">
+                            <li>Real-time secure messaging with user authentication.</li>
+                            <li>Lightweight and fast UI.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-semibold">The Cooking Corner</p>
+                        <p class="italic">Tech: Angular, Tailwind CSS</p>
+                        <ul class="list-disc list-inside">
+                            <li>Interactive food blog with categorized recipes and blog posts.</li>
+                            <li>Clean, responsive UI optimized for readability and mobile users.</li>
+                            <li>Smooth navigation with engaging layout for About and Recipe sections.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Quiz App</p>
+                        <p class="italic">Tech: Angular, Primeng, Bootstrap</p>
+                        <ul class="list-disc list-inside">
+                            <li>Timed quiz platform with HTML, CSS, and JavaScript categories.</li>
+                            <li>10 MCQs per quiz with real-time score tracking and instant feedback.</li>
+                            <li>Responsive UI with pass criteria and auto-handling of unanswered questions.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Translator</p>
+                        <p class="italic">Tech: Angular, Tailwind Css, Font Awesome, Rapid API</p>
+                        <ul class="list-disc list-inside">
+                            <li>Real-time language translation using external API.</li>
+                            <li>Supports multiple language pairs with instant text output.</li>
+                            <li>Minimal, responsive UI for fast and accessible translation experience.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h2 class="text-blue-700 text-xl font-bold mt-6 mb-2">EDUCATION</h2>
+                <div class="w-full border-b-2 border-blue-300 mt-1 mb-3"></div>
+                <p class="text-sm">Master of Computer Applications (MCA), GLA University (Aspirant)</p>
+            </div>
         </div>
     </div>
-</div>
 </section>
